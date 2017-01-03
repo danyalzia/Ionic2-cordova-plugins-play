@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Geolocation</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+<ion-card>
+    <ion-card-content>
+      You can get your location easily by clicking on
+
+      <button (click)="getLocation()">Get Location</button>
+    </ion-card-content>
+</ion-card>
+
+{{getLatitude()}}
+{{getLongitude()}}
+
+</ion-content>
